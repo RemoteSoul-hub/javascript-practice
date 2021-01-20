@@ -22,14 +22,16 @@ function multiply (x, y) {
     return mult;
 }
 function capitalize (string) {
-    let cap = string.toLowerCase();
-    cap = string[0].toUpperCase();
-    return cap;
+   let low = string.toLowerCase();
+   let str = string[0].toUpperCase();
+   let res = str + low.slice(1);
+   return res;
 }
 
 function lastLetter (string) {
-    let length = string.length;
-    let last = string[length];
+    let temp = string.length;
+    let last = string[temp-1];
+    console.log(last);
     return last;
 }
     </script>
